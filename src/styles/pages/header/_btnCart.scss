@@ -1,0 +1,11 @@
+#btn-cart-nav {
+    margin: 0 20px;
+
+    & span {
+        position: relative;
+        top: -20px;
+        left: -10px;
+        background-color: $colorRed;
+    }
+
+}
