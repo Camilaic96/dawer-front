@@ -5,14 +5,13 @@
 @import "utilities/variables";
 @import "utilities/background-blue";
 @import "utilities/buttons";
-@import "pages/header/header";
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
+	overflow-x: hidden;
 	min-height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
 	font-weight: 500;
@@ -27,3 +26,6 @@ a {
 a:hover {
 	color: #fff;
 }
+
+@import "header/header";
+@import "footer";
