@@ -1,0 +1,22 @@
+[
+    {
+        "id": "products",
+        "to": "../productos/vinos-y-bebidas",
+        "title": "Productos"
+    },
+    {
+        "id": "about-us",
+        "to": "../#about-us",
+        "title": "Quiénes somos"
+    },
+    {
+        "id": "faqs",
+        "to": "../#faqs",
+        "title": "¿Cómo hacer un pedido?"
+    },
+    {
+        "id": "footer",
+        "to": "../#footer",
+        "title": "Contacto"
+    }
+]

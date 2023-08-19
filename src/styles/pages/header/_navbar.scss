@@ -1,0 +1,25 @@
+#navbar-header {
+	margin: 10px;
+
+	& .navbar-nav{
+		align-items: center;
+		justify-content: space-around;
+		padding-right: 50px;
+		font-weight: bold;
+	
+		& .nav-link-header {
+			font-size: 20px;
+			color:$colorRed;
+			padding: 10px;
+		}
+		
+		& .nav-link-header.active {
+			border-bottom: 4px solid $colorBlue;
+			color: $colorRed;
+		}
+	}
+
+	@import "./btnLogin";
+	@import "./btnCart";
+	@import "./btnAccount";
+}

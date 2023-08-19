@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer.jsx';
-import Header from './components/Header.jsx';
+import Header from './components/header/Header.jsx';
 import Cart from './pages/Cart.jsx';
 import Checkout from './pages/Checkout.jsx';
 import Error404 from './pages/Error404.jsx';
