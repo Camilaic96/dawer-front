@@ -620,6 +620,139 @@ a:hover {
   text-align: start;
 }
 
+#cart-list {
+  margin: 30px;
+  margin-top: 80px;
+  padding: 20px;
+  border: 5px solid #138192;
+  border-radius: 30px;
+  text-align: center;
+}
+#cart-list .cart-title {
+  display: inline-block;
+  position: relative;
+  top: -50px;
+  padding: 0 50px;
+  background-color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  color: #DF4948;
+}
+#cart-list .cart-body {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+#cart-list .cart-body .row-table {
+  padding: 15px;
+  border-bottom: 1px solid #DF4948;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cart-list .cart-body .row-table .row-table-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cart-list .cart-body .row-table .row-table-info .name-product-table {
+  font-weight: bold;
+  color: #138192;
+  padding: 10px;
+}
+#cart-list .cart-body .row-table .row-table-info .item-table {
+  color: rgb(82, 82, 82);
+  padding: 10px;
+}
+#cart-list .cart-body .row-table .count-table {
+  color: rgb(82, 82, 82);
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+#cart-list .cart-body .row-table .count-table .btn-products {
+  margin: 0 10px;
+  background-color: #fff;
+  border: 0;
+  color: #DF4948;
+}
+
+@media (max-width: 991px) {
+  #cart-list .cart-body .row-table .row-table-info {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+#form-container {
+  margin-top: 50px;
+  padding: 30px;
+  color: #DF4948;
+}
+#form-container h3, #form-container p {
+  font-weight: bold;
+}
+#form-container #cart-form {
+  padding: 20px;
+}
+#form-container #cart-form .body-cart-form {
+  padding: 50px;
+  background-color: rgba(3, 156, 161, 0.2);
+  border-radius: 10px;
+}
+#form-container #cart-form .body-cart-form input {
+  padding: 16px;
+  background-color: rgba(3, 156, 161, 0);
+  border: 0;
+  border-bottom: 1px solid #DF4948;
+  color: #138192;
+}
+#form-container #cart-form .body-cart-form input::-moz-placeholder {
+  color: #138192;
+}
+#form-container #cart-form .body-cart-form input::placeholder {
+  color: #138192;
+}
+#form-container #cart-form .body-cart-form .input-with-icon {
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+#form-container #cart-form .body-cart-form .at {
+  background-image: url("../img/icons/at-red.png");
+}
+#form-container #cart-form .body-cart-form .user {
+  background-image: url("../img/icons/user-red.png");
+}
+#form-container #cart-form .body-cart-form .pencil {
+  background-image: url("../img/icons/pencil-red.png");
+}
+#form-container .container-btn-cart-form {
+  display: flex;
+  justify-content: end;
+  padding: 20px 0;
+}
+#form-container .container-btn-cart-form .btn-cart-form-delete {
+  border: 3px solid #138192;
+  color: #138192;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(3, 156, 161, 0.2);
+}
+#form-container .container-btn-cart-form .btn-cart-form-submit {
+  border: 3px solid #138192;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #138192;
+}
+
 #footer {
   position: relative;
   bottom: 0;
