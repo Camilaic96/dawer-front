@@ -1,5 +1,9 @@
+import ForgotPass from '../components/forgotPassword/ForgotPass';
+import ResetPass from '../components/forgotPassword/ResetPass';
+
 const ForgotPassword = () => {
-	return <div>ForgotPassword</div>;
+	const cookie = false;
+	return <>{!cookie ? <ForgotPass /> : <ResetPass />}</>;
 };
 
 export default ForgotPassword;
