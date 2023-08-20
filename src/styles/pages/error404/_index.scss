@@ -1,0 +1,15 @@
+#error404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $colorBlue;
+    & h2 {
+        font-weight: bold;
+    }
+    & .link-404 {
+        font-weight: bold;
+        color: $colorRed;
+        text-decoration: underline;
+    }
+}
