@@ -1,0 +1,33 @@
+#profile {
+    margin: 30px auto;
+	padding: 30px;
+    padding-top: 0;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	text-align: center;
+	border: 4px solid $colorBlue;
+	border-radius: 8px;
+    color: $colorRed;
+
+    & .bold {
+        font-weight: bold;
+    }
+
+	& h2 {
+		display: inline-block;
+		position: relative;
+		top: -65px;
+		background-color: #fff;
+        max-width: 200px;
+        align-self: center;
+        padding: 20px;
+	}
+
+	& .container-profile-info {
+		display: flex;
+		flex-direction: column;
+		text-align: start;
+	}
+}

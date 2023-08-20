@@ -589,6 +589,37 @@ a:hover {
   color: #fff;
 }
 
+#profile {
+  margin: 30px auto;
+  padding: 30px;
+  padding-top: 0;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 4px solid #138192;
+  border-radius: 8px;
+  color: #DF4948;
+}
+#profile .bold {
+  font-weight: bold;
+}
+#profile h2 {
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  background-color: #fff;
+  max-width: 200px;
+  align-self: center;
+  padding: 20px;
+}
+#profile .container-profile-info {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
 #footer {
   position: relative;
   bottom: 0;
