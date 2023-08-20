@@ -471,6 +471,69 @@ a:hover {
     align-items: center;
   }
 }
+#container-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 600px);
+}
+#container-register .form-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: rgba(3, 156, 161, 0.2);
+  border-radius: 10px;
+}
+#container-register .form-register input {
+  padding: 16px;
+  background-color: rgba(3, 156, 161, 0);
+  border: 0;
+  border-bottom: 1px solid #DF4948;
+  color: #138192;
+}
+#container-register .form-register input::-moz-placeholder {
+  color: #138192;
+}
+#container-register .form-register input::placeholder {
+  color: #138192;
+}
+#container-register .form-register .input-with-icon {
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+#container-register .form-register .user {
+  background-image: url("../img/icons/user-red.png");
+}
+#container-register .form-register .at {
+  background-image: url("../img/icons/at-red.png");
+}
+#container-register .form-register .pencil {
+  background-image: url("../img/icons/pencil-red.png");
+}
+#container-register .form-register .btn-form-register {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #138192;
+  font-weight: bold;
+  background-color: #138192;
+  color: #fff;
+}
+#container-register .container-links-register {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#container-register .container-links-register p {
+  color: #138192;
+}
+#container-register .container-links-register p .link-register {
+  color: #138192;
+  font-weight: bold;
+}
+
 #footer {
   position: relative;
   bottom: 0;
