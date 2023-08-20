@@ -11,6 +11,7 @@ import PanelAdmin from './pages/PanelAdmin.jsx';
 import Products from './pages/Products.jsx';
 import Profile from './pages/Profile.jsx';
 import Register from './pages/Register.jsx';
+import DetailProduct from './pages/DetailProduct.jsx';
 
 function App() {
 	return (
@@ -21,6 +22,10 @@ function App() {
 					<Route path={'/'} element={<Home />} />
 					<Route path={'/productos/'} element={<Products />} />
 					<Route path={'/productos/:catId'} element={<Products />} />
+					<Route
+						path={'/productos/:catId/detalle/:pid'}
+						element={<DetailProduct />}
+					/>
 					<Route path={'/carrito'} element={<Cart />} />
 					<Route path={'/ticket'} element={<Checkout />} />
 					<Route path={'/login'} element={<Login />} />
