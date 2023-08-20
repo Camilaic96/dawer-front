@@ -32,7 +32,8 @@ a:hover {
 }
 
 @import "header/header";
+@import "pages/error404/index.scss";
 @import "pages/home/index";
 @import "pages/products/index";
-@import "pages/error404/index.scss";
+@import "pages/login/index";
 @import "footer";
