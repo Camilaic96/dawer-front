@@ -1,12 +1,14 @@
 // import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+
+import { SessionContext } from '../../context/SessionContext';
 import BtnCart from './BtnCart';
 import BtnLogin from './BtnLogin';
 import BtnAccount from './BtnAccount';
 
 const NavBar = () => {
-	// const { user } = useContext(SessionContext);
-	const user = false;
+	const { user } = useContext(SessionContext);
 
 	const itemsNav = [
 		{

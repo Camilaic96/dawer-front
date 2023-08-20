@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import SessionContextProvider from './context/SessionContext.jsx';
+
 import Footer from './components/Footer.jsx';
 import Header from './components/header/Header.jsx';
 import Cart from './pages/Cart.jsx';
@@ -15,7 +18,7 @@ import DetailProduct from './pages/DetailProduct.jsx';
 
 function App() {
 	return (
-		<div>
+		<SessionContextProvider>
 			<BrowserRouter>
 				<Header />
 				<Routes>
@@ -37,7 +40,7 @@ function App() {
 				</Routes>
 				<Footer />
 			</BrowserRouter>
-		</div>
+		</SessionContextProvider>
 	);
 }
 

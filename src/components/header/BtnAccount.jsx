@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
 
-const btnAccount = () => {
-	const userRole = 'ADMIN';
-	// const userRole = 'USER';
+import { SessionContext } from '../../context/SessionContext';
+import useUser from '../../hooks/useUser';
+
+const BtnAccount = () => {
+	const { user } = useContext(SessionContext);
+	const { logout } = useUser();
+
 	return (
 		<div className="dropdown" id="btn-account-nav">
 			<button
@@ -19,7 +24,7 @@ const btnAccount = () => {
 						Perfil
 					</Link>
 				</li>
-				{userRole === 'ADMIN' && (
+				{user.role === 'ADMIN' && (
 					<li className=" mb-3">
 						<Link to={'/panel'} className="li-btn-account">
 							Panel
@@ -27,11 +32,13 @@ const btnAccount = () => {
 					</li>
 				)}
 				<li>
-					<button className="li-btn-account">Cerrar Sesión</button>
+					<button onClick={logout} className="li-btn-account">
+						Cerrar Sesión
+					</button>
 				</li>
 			</ul>
 		</div>
 	);
 };
 
-export default btnAccount;
+export default BtnAccount;
